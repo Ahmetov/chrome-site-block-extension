@@ -1,0 +1,18 @@
+{
+  "name": "Расширение",
+  "description": "Блок сайтов",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts":["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
